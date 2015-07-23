@@ -86,6 +86,7 @@ public class CustomScanner implements Iterator<String>, Closeable {
 
     @Override
     public void close() throws IOException {
+        _reader.close();
 
     }
 }

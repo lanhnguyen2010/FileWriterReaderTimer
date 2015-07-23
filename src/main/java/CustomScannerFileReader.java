@@ -6,8 +6,7 @@ import java.io.IOException;
  */
 public class CustomScannerFileReader {
     public static void main(String[] args) throws IOException {
-        CustomScanner customScanner = new CustomScanner(new FileReader("scanner.txt"), ',', 1);
-        FileReader fileReader = new FileReader("scanner.txt");
+        CustomScanner customScanner = new CustomScanner(new FileReader("test.txt"), '\n', 1);
         while (customScanner.hasNext()) {
             System.out.println(customScanner.next());
         }
